@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Montserrat font family - Can be changed to other Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+     <!-- BOOTSTRAP ICONS -->
+    <!-- Icon set from Bootstrap Icons v1.11.3 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- Custom stylesheets - Modify these files for styling changes -->
+    <!-- Navbar CSS Custome -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+     <!-- Footer CSS Custome -->
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- Berita Page CSS  -->
+     <link rel="stylesheet" href="assets/css/berita-page.css">
+  </head>
+  <body>
+     <!-- Navbar -->
+    <nav data-sal="slide-down" data-sal-duration="900" class="navbar navbar-expand-lg fixed-top shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img" src="assets/img/logo-sekolah-tut-wuri-handayani.avif" alt="Logo Sekolah" width="auto" height="40">
+          </a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        > 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-uppercase" id="offcanvasNavbarLabel">smk inovasi digital manado</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 text-capitalize">
+              <li class="nav-item">
+                <a class="nav-link link-nav mx-lg-2" aria-current="page" href="index.html">beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav mx-lg-2" href="profil-sekolah.html">profil sekolah</a>
+              </li>
+
+              <li class="nav-item dropdown link-nav">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Program Keahlian
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item link-nav-dropdown" href="Program-Keahlian-RPL.html">Rekayasa Perangkat Lunak</a></li>
+                  <li><a class="dropdown-item link-nav-dropdown" href="Program-Keahlian-TKJ.html">Teknik Komputer dan Jaringan</a></li>
+                  <li><a class="dropdown-item link-nav-dropdown" href="Program-Keahlian-DKV.html">Desain Komunikasi Visual</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link link-nav mx-lg-2 active" href="#">berita & kegiatan</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+     <main>
+
+        <!-- Hero Section -->
+        <!-- Hero Section: Single News Page -->
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Kolom Lebar untuk Konten Utama (misal: 9/12) -->
+      <div class="col-lg-9">
+        <!-- 1. Gambar Utama (Klik untuk Lightbox) -->
+        <div class="mb-4">
+          <a
+            href="assets/img/ukk-2025-siswa-jurusan-tkj.webp"
+            data-bs-toggle="modal"
+            data-bs-target="#lightboxModal"
+          >
+            <img
+              src="assets/img/ukk-2025-siswa-jurusan-tkj.webp"
+              alt="Siswa Jurusan TKJ Mengikuti UKK 2025"
+              class="img-fluid rounded shadow-sm"
+            />
+          </a>
+        </div>
+
+        <!-- Lightbox Modal (Bootstrap 5) -->
+        <div
+          class="modal fade"
+          id="lightboxModal"
+          tabindex="-1"
+          aria-labelledby="lightboxLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+              <div class="modal-body p-0">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <img
+                  src="assets/img/ukk-2025-siswa-jurusan-tkj.webp"
+                  class="img-fluid w-100 rounded"
+                  alt="Siswa Jurusan TKJ Mengikuti UKK 2025"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Judul Berita -->
+        <h1 class="display-5 fw-bold mb-3">
+          Siswa Jurusan TKJ SMK Yadika Manado Sukses Ikuti UKK 2025
+        </h1>
+
+        <!-- 3. Info Meta (Tanggal, Penulis, Kategori) -->
+        <div class="d-flex flex-wrap text-muted mb-4">
+          <!-- Tanggal -->
+          <div class="me-4 d-flex align-items-center">
+            <i class="bi bi-calendar-event me-1"></i>
+            <small>Selasa, 12 Maret 2024</small>
+          </div>
+          <!-- Penulis -->
+          <div class="me-4 d-flex align-items-center">
+            <i class="bi bi-person me-1"></i>
+            <small
+              >Oleh
+              <a href="#" class="text-decoration-none">Admin Redaksi</a></small
+            >
+          </div>
+          <!-- Kategori/Bagian -->
+          <div class="me-4 d-flex align-items-center">
+            <i class="bi bi-tag me-1"></i>
+            <small>Berita / Kegiatan</small>
+          </div>
+        </div>
+
+        <!-- 4. Isi Berita -->
+        <!-- Paragraf Pembuka (Lead) -->
+        <p class="lead lh-lg">
+          Siswa Jurusan Teknik Komputer dan Jaringan (TKJ) SMK Yadika Manado
+          berhasil menorehkan prestasi gemilang dalam Ujian Kompetensi Keahlian
+          (UKK) 2025. Kegiatan yang berlangsung selama dua hari ini diikuti oleh
+          seluruh siswa kelas XII jurusan TKJ, dengan dukungan penuh dari guru
+          pembimbing dan pihak sekolah.
+        </p>
+
+        <!-- Paragraf Tengah (Isi Lengkap) -->
+        <article class="article-content">
+          <p class="lh-lg pb-3">
+            Pada hari pertama, siswa mengikuti ujian praktik langsung di
+            laboratorium komputer sekolah. Setiap peserta diuji kemampuan
+            instalasi jaringan, konfigurasi server, hingga troubleshooting
+            kerusakan perangkat keras. Kepala Jurusan TKJ, Bapak Andi Wijaya,
+            menjelaskan bahwa persiapan telah dilakukan sejak awal semester
+            dengan simulasi ujian dan pendalaman materi praktikum.
+          </p>
+
+          <p class="lh-lg pb-3">
+            “Kami memberikan pembekalan intensif, mulai dari instalasi jaringan
+            sederhana hingga manajemen server berbasis Linux,” tutur Pak Andi.
+            “Senang sekali melihat antusiasme siswa. Beberapa di antaranya sudah
+            berhasil menyelesaikan modul-modul keahlian lebih cepat dari
+            perkiraan.”
+          </p>
+
+          <blockquote class="blockquote border-start ps-3 mb-3">
+            <p class="mb-0">
+              “Target kami bukan hanya lulus, tetapi juga menguasai skill
+              industri yang siap pakai. Karena di dunia kerja, pengalaman
+              praktis sangat penting.”
+            </p>
+            <footer class="blockquote-footer mt-2">
+              <cite title="Source Title">Andi Wijaya, Kepala Jurusan TKJ</cite>
+            </footer>
+          </blockquote>
+
+          <p class="lh-lg pb-3">
+            Pada hari kedua, giliran ujian teori dilaksanakan dengan durasi tiga
+            jam di ruang kelas. Soal mencakup jaringan komputer, pemrograman
+            dasar, dan keamanan siber. Mayoritas siswa mampu menyelesaikan soal
+            dengan nilai memuaskan. Hasil akhir menunjukkan bahwa nilai
+            rata-rata siswa TKJ SMK Yadika Manado meningkat hingga 10%
+            dibandingkan UKK tahun sebelumnya.
+          </p>
+
+          <p class="lh-lg pb-3">
+            Sementara itu, Ketua Panitia UKK 2025, Ibu Ratna Dewi, menambahkan
+            bahwa pihak sekolah juga mengundang beberapa praktisi TI dari
+            industri lokal untuk memberikan materi tambahan. Hal ini dilakukan
+            supaya siswa lebih siap menghadapi tantangan dunia kerja dan
+            memahami tren teknologi terkini.
+          </p>
+
+          <p class="lh-lg">
+            Dengan hasil yang memuaskan ini, diharapkan lulusan TKJ SMK Yadika
+            Manado dapat diterima langsung magang atau bekerja di
+            perusahaan-perusahaan mitra, serta berkesempatan melanjutkan
+            pendidikan ke jenjang yang lebih tinggi di bidang TI.
+          </p>
+        </article>
+
+        <!-- 5. Bagian Tag, Share, dan Related Posts (Opsional) -->
+        <div class="mt-5 border-top pt-4">
+          <!-- Tag Berita -->
+          <div class="mb-3">
+            <span class="badge bg-primary me-2">TKJ</span>
+            <span class="badge bg-secondary me-2">UKK 2025</span>
+            <span class="badge bg-info text-dark">Prestasi Siswa</span>
+          </div>
+
+          <!-- Tombol Share Media Sosial -->
+          <div class="mb-4">
+            <small class="text-muted me-2">Bagikan:</small>
+            <a href="#" class="btn btn-sm btn-outline-primary me-1"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="btn btn-sm btn-outline-info me-1"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" class="btn btn-sm btn-outline-danger"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
+
+          <!-- Related Posts (Contoh) -->
+          <div>
+            <h5 class="mb-3">Berita Terkait</h5>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                  <img
+                    src="assets/img/akreditas A.png"
+                    class="card-img-top"
+                    alt="Kegiatan Praktikum TKJ"
+                  />
+                  <div class="card-body p-3">
+                    <h6 class="card-title">
+                      Kegiatan Praktikum TKJ Bulan April 2024
+                    </h6>
+                    <p class="card-text text-muted small">20 April 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                  <img
+                    src="assets/img/kompetisi-siswa.webp"
+                    class="card-img-top"
+                    alt="Kompetisi TI 2024"
+                  />
+                  <div class="card-body p-3">
+                    <h6 class="card-title">
+                      Siswa SMK Yadika Raih Juara di Kompetisi TI
+                    </h6>
+                    <p class="card-text text-muted small">5 Mei 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                  <img
+                    src="assets/img/wisuda.webp"
+                    class="card-img-top"
+                    alt="Wisuda Siswa"
+                  />
+                  <div class="card-body p-3">
+                    <h6 class="card-title">
+                      Wisuda Siswa Berprestasi TKJ 2023
+                    </h6>
+                    <p class="card-text text-muted small">10 Desember 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.border-top -->
+      </div>
+      <!-- /.col-lg-9 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+  </body>
+</html>

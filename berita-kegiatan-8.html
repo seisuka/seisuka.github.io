@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Montserrat font family - Can be changed to other Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP ICONS -->
+    <!-- Icon set from Bootstrap Icons v1.11.3 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- BOOTSTRAP 5 CSS -->
+    <!-- Core Bootstrap CSS - Version 5.3.5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- CUSTOM CSS FILES -->
+    <!-- Custom stylesheets - Modify these files for styling changes -->
+    <!-- Navbar CSS Custome -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <!-- Footer CSS Custome -->
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- Profile School/Company CSS -->
+    <link rel="stylesheet" href="assets/css/berita-page.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img" src="assets/img/logo-sekolah-tut-wuri-handayani.avif" alt="Logo Sekolah" width="auto" height="40">
+          </a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        > 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-uppercase" id="offcanvasNavbarLabel">smk inovasi digital manado</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 text-capitalize">
+              <li class="nav-item">
+                <a class="nav-link link-nav mx-lg-2" aria-current="page" href="index.html">beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav mx-lg-2" href="profil-sekolah.html">profil sekolah</a>
+              </li>
+
+              <li class="nav-item dropdown link-nav">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Program Keahlian
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item link-nav-dropdown" href="Program-Keahlian-RPL.html">Rekayasa Perangkat Lunak</a></li>
+                  <li><a class="dropdown-item link-nav-dropdown" href="Program-Keahlian-TKJ.html">Teknik Komputer dan Jaringan</a></li>
+                  <li><a class="dropdown-item link-nav-dropdown" href="Program-Keahlian-DKV.html">Desain Komunikasi Visual</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link link-nav mx-lg-2" href="berita-kegiatan.html">berita & kegiatan</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+     <main>
+
+        <!-- Hero Section -->
+         <section class="hero-section">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">       
+                      <a href="assets/img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg" data-toggle="lightbox">
+                        <img src="assets/img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg" alt="" class="img-fluid rounded">
+                        </a>
+                          <h1 class="display-5 fw-bold mt-3">TKJ Menyempurnakan Infrastruktur Server untuk Platform Pembelajaran Online</h1>
+                          <!--  -->
+                          <div class="d-flex flex-wrap text-muted mb-3">
+                            <!-- Tanggal -->
+                            <div class="me-2 d-flex align-items-center">
+                              <i class="bi bi-calendar-event me-1"></i>
+                              <small>Rabu, 14 Febuari 2024</small>
+                            </div>
+                            <!-- Publikasi -->
+                            <div class="me-2 d-flex align-items-center">
+                              <i class="bi bi-person me-1"></i>
+                              <small>
+                                Oleh <a class="text-decoration-none" href="#">Admin</a>
+                              </small>
+                            </div>
+                            <!-- kategori -->
+                            <div class="me-2 d-flex align-items-center">
+                              <i class="bi bi-tag me-1"></i>
+                              <small>Berita / Kegiatan</small>
+                            </div>
+                          </div>
+                          <article>
+                           <p class="lh-lg">(Manado, 14 Febuari 2024) – Jurusan Teknik Komputer dan Jaringan (TKJ) SMK Inovasi Digital Manado berhasil menyelesaikan proyek penyempurnaan infrastruktur server pendukung platform e-learning sekolah. Dengan migrasi ke sistem cloud hybrid dan penambahan node server baru, kapasitas kini mampu menampung 1.500 pengguna simultan—peningkatan 3x lipat dari sebelumnya. Upgrade ini langsung diujicobakan selama Ujian Akhir Semester, menghasilkan loading time 0.8 detik dan zero downtime.</p>
+                           <p class="lh-lg">Proyek yang digarap selama 3 bulan ini melibatkan 15 siswa kelas XII TKJ dibimbing langsung oleh guru jaringan Bapak Arif Rahman, S.Kom. Mereka mengimplementasikan load balancing dengan HAProxy, konfigurasi redundant storage berbasis RAID 10, serta keamanan tiered firewall. "Ini bukan sekadar upgrade hardware, tapi transformasi arsitektur untuk antisipasi distance learning jangka panjang," tegas Kepala Jurusan TKJ Ibu Dewi Anggraeni dalam sesi serah terima proyek.</p>
+                           </article>
+                           <div class="mt-5 border-top pt-2">
+                            <!-- Tag Berita -->
+                             <div class="mb-3">
+                                 <span class="badge bg-primary me-2">TKJ</span>
+                                 <span class="badge bg-primary me-2">Server</span>
+                                 <span class="badge bg-primary me-2">Pembelajaran Online</span>
+                             </div>
+                             <div class="pb-3 d-flex">
+                              <a href="berita-kegiatan.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i>Kembali ke Berita & Kegiatan</a>
+                             </div>
+                             <!-- Share Media Sosial -->
+                              <div class="mb-3">
+                                <small class="text-muted me-2">Bagikan:</small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                  <i class="bi bi-facebook icon-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                  <i class="bi bi-instagram icon-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                  <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                  <i class="bi bi-telegram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                  <i class="bi bi-link-45deg"></i>
+                                </a>
+                              </div>
+                           </div>
+                           <!-- Related Post -->
+                            <div class="pb-5">
+                              <h5 class="mb-3">Berita Terkait</h5>
+                              <div class="row">
+                                <!-- Berita 1 -->
+                                <div class="col-md-4">
+                                  <div class="card border-0  mb-3">
+                                    <a class="text-decoration-none text-dark" href="">
+                                    <img src="assets/img/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="" class="card-img-top img-news">
+                                    <div class="card-body ps-0">
+                                      <h5 class="card-title">Card Title</h5>
+                                      <p class="card-text">Pelatihan intensif menggunakan Adobe Creative Cloud untuk 50 siswa terpilih</p>
+                                      <p class="text-muted">
+                                        <i class="bi bi-calendar-event me-2"></i>Kamis, 28 Maret 2024 </p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!--  -->
+                                <div class="col-md-4">
+                                  <div class="card border-0 mb-3">
+                                    <a class="text-decoration-none text-dark" href="">
+                                    <img src="assets/img/s-o-c-i-a-l-c-u-t-EwQhB7yNGOU-unsplash.jpg" alt="" class="card-img-top img-news">
+                                    <div class="card-body ps-0">
+                                      <h5 class="card-title">Card Title</h5>
+                                       <p class="card-text">Pelatihan intensif menggunakan Adobe Creative Cloud untuk 50 siswa terpilih</p>
+                                      <p class="text-muted">
+                                        <i class="bi bi-calendar-event me-2"></i>Kamis, 28 Maret 2024 </p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!--  -->
+                                 <div class="col-md-4">
+                                  <div class="card border-0 mb-3">
+                                    <a class="text-decoration-none text-dark" href="">
+                                    <img src="assets/img/Desain tanpa judul (10).png" alt="" class="card-img-top img-news">
+                                    <div class="card-body ps-0">
+                                      <h5 class="card-title">Card Title</h5>
+                                       <p class="card-text">Pelatihan intensif menggunakan Adobe Creative Cloud untuk 50 siswa terpilih</p>
+                                      <p class="text-muted">
+                                        <i class="bi bi-calendar-event me-2"></i>Kamis, 28 Maret 2024 </p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+         </section>
+     </main>
+
+     <!-- FOOTER -->
+<section class="bg-dark py-5">
+  <footer class="mt-auto bg-dark text-white pt-4 pb-4">
+    <div class="container">
+        <div class="row">
+          <!-- Brief information about the school/company -->
+            <div class="col-md-3 mb-3">
+                <h5>SMK Inovasi Digital Manado</h5>
+                <p>Sekolah Menengah Kejuruan berbasis teknologi digital di Manado yang mencetak profesional muda bidang RPL, TKJ, dan DKV. Terakreditasi A dengan fasilitas modern dan pengajar berpengalaman.</p>
+            </div>
+
+            <!-- Quick link -->
+            <div class="col-md-3 mb-3">
+                <h5>Tautan Lainnya</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="nav-link text-white link-footer" href="index.html">
+                            <i class="bi bi-house me-2"></i>Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white link-footer" href="profil-sekolah.html">
+                            <i class="bi bi-info-circle me-2"></i>Profil Sekolah
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white link-footer" href="Program-Keahlian-RPL.html">
+                            <i class="bi bi-code-slash me-2"></i>Rekayasa Perangkat Lunak
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white link-footer" href="Program-Keahlian-TKJ.html">
+                            <i class="bi bi-router me-2"></i>Teknik Komputer dan Jaringan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white link-footer" href="Program-Keahlian-DKV.html">
+                            <i class="bi bi-palette me-2"></i>Desain Komunikasi Visual
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white link-footer"  href="#">
+                            <i class="bi bi-newspaper me-2"></i>Berita & Kegiatan
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- School/Company Contact -->
+            <div class="col-md-3 mb-3">
+                <h5>Informasi</h5>
+                <ul class="list-unstyled"> 
+                    <li class="nav-item">
+                      <a class="nav-link text-white link-footer" href="https://maps.app.goo.gl/3rtx7N8ydF3xB2T36" target="_blank">
+                        <i class="bi bi-geo-alt-fill me-2"></i>Jl. Sam Ratulangi No. 45 Kelurahan Tikala, Kec. Wenang
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white link-footer" href="https://wa.me/+62812345678910" target="_blank">
+                        <i class="bi bi-telephone-fill me-2"></i>+62 123 4567 8910
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white link-footer" href="mailto:miawhhh6@gmail.com">
+                        <i class="bi bi-envelope me-2"></i>info@digitalmanado.sch.id
+                      </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- School/Company Social Media -->
+            <div class="col-md-3 mb-3">
+                <h5>Media Sosial</h5>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram fs-4"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.tiktok.com/explore" target="_blank" class="text-white"><i class="bi bi-tiktok fs-4"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.youtube.com/@Miawhhh" target="_blank" class="text-white"><i class="bi bi-youtube fs-4"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank" class="text-white"><i class="bi bi-facebook fs-4"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+
+        <!-- Author/Creator Website -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">&copy; 2025 SMK Inovasi Digital Manado. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</section>
+  <!-- END FOOTER -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+  </body>
+</html>
